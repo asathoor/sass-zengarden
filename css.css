@@ -1,0 +1,31 @@
+/* color selection */
+body {
+  background-color: #FF3399; }
+
+/* my standards for text */
+p {
+  color: #FFCC00; }
+  p a {
+    color: #6699FF; }
+  p a:hover {
+    background-color: #FF3399; }
+
+/*mixins */
+img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#zen-summary {
+  background-color: #80aaff;
+  border: 5px solid black;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px; }
+  #zen-summary p {
+    padding: 7px;
+    color: #996600; }
+
+/*# sourceMappingURL=css.css.map */

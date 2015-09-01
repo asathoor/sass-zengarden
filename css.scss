@@ -1,0 +1,55 @@
+
+
+/* color selection */
+$orange: #FFCC00;
+$green: #FF3399;
+$red: #6699FF;
+
+body {
+	background-color: $green;
+}
+
+/* my standards for text */
+p {
+	color: $orange;
+
+	a {
+		color: $red;
+	}
+
+	a:hover {
+		background-color: $green;
+	}
+
+}
+
+/*mixins */
+@mixin donald-duck($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+img {
+	@include donald-duck(10px);
+}
+
+
+#zen-summary {
+	background-color: lighten($red, 5%);
+	border: 5px solid black;
+	@include donald-duck(25px);
+	p {
+		padding: 7px;
+		color: invert($red);
+	}
+}
+
+
+
+
+
+
+
